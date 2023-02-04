@@ -4,7 +4,7 @@ import { IDeliveryFormElement, IFormInitialValues } from "../Components/Delivery
 export const formElements:IDeliveryFormElement[] = [
     {
       label: "Cart Value(EUR)",
-      name: "cardValue",
+      name: "cartValue",
       type: "number"
     },
     {
@@ -26,7 +26,7 @@ export const formElements:IDeliveryFormElement[] = [
 
 
   export const initialValues:IFormInitialValues = {
-    cardValue: undefined,
+    cartValue: undefined,
     deliveryDistance: undefined,
     noOfItems: undefined,
     dateTime: dayjs()

@@ -19,7 +19,7 @@ import { formElements, initialValues } from "../../Contstants/FormElement";
 const theme = createTheme();
 
 const validationSchema = object({
-  cardValue: number().required("Card value is required"),
+  cartValue: number().required("Cart value is required"),
   deliveryDistance: number().required("Delivery distance is required"),
   noOfItems: number().required("Number of items required"),
   dateTime: date().required("Date time is required"),
@@ -33,7 +33,7 @@ const DeliveryComponent = () => {
 
   const handleSubmit = (event: any, actions: any) => {
     const result = findDeloveryFee({
-      cardValueInEuro: event?.cardValue,
+      cartValueInEuro: event?.cartValue,
       deliveryDistanceInMeter: event?.deliveryDistance,
       noOfItems: event?.noOfItems,
       time: event?.dateTime,

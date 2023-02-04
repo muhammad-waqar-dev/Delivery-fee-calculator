@@ -1,7 +1,7 @@
 import { Dayjs } from "dayjs";
 
 export interface IFindDeloveryFeeProps {
-     cardValueInEuro: number;
+     cartValueInEuro: number;
      deliveryDistanceInMeter: number;
      noOfItems: number;
      time: Dayjs; //I used dayjs type but it's will be changed to default  Date

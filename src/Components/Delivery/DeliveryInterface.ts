@@ -7,7 +7,7 @@ export interface IDeliveryFormElement {
    }
   
    export interface IFormInitialValues {
-    cardValue: undefined | number;
+    cartValue: undefined | number;
     deliveryDistance: undefined | number;
     noOfItems: undefined | number;
     dateTime: Dayjs;

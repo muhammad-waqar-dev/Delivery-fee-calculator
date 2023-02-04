@@ -1,7 +1,7 @@
 import { IFindDeloveryFeeProps, IFindDeloveryFeeResult } from "./DeliverFeeCalculatorInterface";
 
 export const findDeloveryFee = (props: IFindDeloveryFeeProps) => {
-  const { cardValueInEuro, deliveryDistanceInMeter, noOfItems, time } = props;
+  const { cartValueInEuro, deliveryDistanceInMeter, noOfItems, time } = props;
   let surchargeFee = 0;
   let distanceInMeterFee = 0;
   let baseFee = 2;
@@ -10,19 +10,19 @@ export const findDeloveryFee = (props: IFindDeloveryFeeProps) => {
   let deliveryFeeInEuro = 0;
   let timeInHours = time?.hour();
 
-  if (cardValueInEuro >= 100) {
+  if (cartValueInEuro >= 100) {
 
     let result: IFindDeloveryFeeResult = {
       fee: deliveryFeeInEuro,
       status: true,
-      message: "Card value greater than 100"
+      message: "Cart value greater than 100"
     }
 
     return result;
   }
 
-  if (cardValueInEuro < 10) {
-    surchargeFee = 10 - cardValueInEuro;
+  if (cartValueInEuro < 10) {
+    surchargeFee = 10 - cartValueInEuro;
   }
 
   if (deliveryDistanceInMeter > 0) {
