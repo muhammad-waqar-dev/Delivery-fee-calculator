@@ -7,7 +7,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateTimePicker } from "@mui/x-date-pickers/DateTimePicker";
 
 function FormikDate(props: any) {
-  const { name, label, key, placeholderText, inputLabelShrink } = props;
+  const { name, label, key, placeholderText, inputLabelShrink, disabled } = props;
 
   const [dateTimeValue, setDateTimeValue] = useState<Dayjs | null>(dayjs());
 
@@ -48,6 +48,7 @@ function FormikDate(props: any) {
                 name={name}
                 label={label}
                 value={dateTimeValue}
+                disabled={disabled}
                 {...params}
               />
             );

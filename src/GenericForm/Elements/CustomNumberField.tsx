@@ -8,16 +8,9 @@ function CustomNumberField(props: any) {
     name,
     label,
     type,
-    description,
-    additionalAction,
-    visibility,
-    values,
     placeholderText,
     disabled,
-    toolTipText,
-    helperText,
     inputLabelShrink,
-    ...others
   } = props;
 
   const NumberField = (props: any) => {
@@ -46,6 +39,7 @@ function CustomNumberField(props: any) {
         label={label}
         variant="outlined"
         type={type}
+        disabled={disabled}
       />
     </Grid>
   );
