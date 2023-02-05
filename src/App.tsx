@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Delivery from './Components/Delivery/Delivery';
+import Delivery from './Components/Delivery';
 
 function App() {
   return (
