@@ -25,7 +25,6 @@ const DeliveryComponent = () => {
 
 
   const handleFormSubmit = (event: any, actions: any) => {
-    debugger
     const result = findDeloveryFee({
       cartValueInEuro: event?.cartValue,
       deliveryDistanceInMeter: event?.deliveryDistance,
