@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Formik, Form } from "formik";
-import Components from "./Elements/GenericFormElements";
+import Components from "./Elements";
 import { Grid, Button } from "@mui/material";
 import { FormData } from "./GenericFormInterface";
 import { formElementTypes } from "../Contstants/FormElement";
