@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import {Grid} from '@mui/material';
 import {FormData} from './GenericFormInterface';
 import GenericFormElements from './GenericFormElements';
 
@@ -11,7 +10,6 @@ const GenericForm : FC<FormData> = ({
   submitButtonDetails
 }) => {
   return (
-        <Grid item xs={12} sm={12} md={12} lg={12}>
             <GenericFormElements
               submitButtonDetails={submitButtonDetails}
               handleFormSubmit={handleFormSubmit}
@@ -19,7 +17,6 @@ const GenericForm : FC<FormData> = ({
               initialValues={initialValues}
               validationSchema={validationSchema}
             />
-        </Grid>
   );
 }
 
